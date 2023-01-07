@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "node ./scipts/create-env.js && webpack --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js"
+
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
     "html",
     "css"
   ],
-  "author": "oscar barajas <oscar@gndx.dev>",
+  "author": "oscar barajas <oscar@gndx.dev>", 
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gndx/js-portfolio/issues"
